@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/com.edoucell.ych"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bar_back_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height" >
+
+        <com.yc.view.tools.TopBarView
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            test:text="@string/phone_txt"
+            test:textColor="@color/color_white"
+            test:textSize="@dimen/top_bar_title_text_size" >
+        </com.yc.view.tools.TopBarView>
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bar_back_rel" >
+
+        <ListView
+            android:id="@+id/lsview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

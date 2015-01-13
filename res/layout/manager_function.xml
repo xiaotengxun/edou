@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:test="http://schemas.android.com/apk/res/com.edoucell.ych"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+         >
+   <com.yc.view.tools.TopBarView
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            test:text="@string/cell_manage"
+            test:textColor="@color/color_white"
+            test:textSize="@dimen/top_bar_title_text_size" >
+        </com.yc.view.tools.TopBarView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/manager_item_cell_introduce"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/manager_list_item_height"
+            android:background="@drawable/manager_listitem_background"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/manager_listitem_cell_introduce"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/manager_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/left_arror_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/manager_item_addfix"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="@dimen/manager_list_item_height"
+            android:background="@drawable/manager_listitem_background"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/manager_listitem_addfix"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/manager_list_item_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/left_arror_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="fill_parent" >
+
+        <com.yc.view.tools.MarQueeTextView
+            android:id="@+id/phone_company"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:gravity="left|center_vertical"
+            android:text="@string/top_bar_default_locate"
+            android:textColor="@color/color_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/company_owner"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/color_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/company_dial"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/phone_dialog"
+            android:textColor="@color/color_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

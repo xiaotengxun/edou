@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/com.edoucell.ych"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.yc.view.tools.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        test:text="测试"
+        test:textColor="@color/color_white"
+        test:textSize="20sp" >
+    </com.yc.view.tools.TopBarView>
+
+</RelativeLayout>

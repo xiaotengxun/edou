@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/leftmenu_bg" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_centerHorizontal="true" >
+
+        <com.yc.view.tools.MarQueeTextView
+            android:id="@+id/located_place"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/press_background"
+            android:clickable="true"
+            android:drawableRight="@drawable/expand_down"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/top_bar_default_locate"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/top_bar_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar_back_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height" >
+
+        <ImageView
+            android:id="@+id/bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/press_background"
+            android:clickable="true"
+            android:src="@drawable/back_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/bar_back_rel" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" >
+        </com.baidu.mapapi.map.MapView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recomand_locate_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_back_rel"
+        android:layout_marginTop="1dp"
+        android:background="@color/leftmenu_bg"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/recomand_locate_place"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

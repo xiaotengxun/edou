@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lin_addfix_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/manager_fix_title" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <EditText
+                    android:id="@+id/manager_addfix_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_addfix_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_addfix_title"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/manager_fix_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <EditText
+                    android:id="@+id/manager_addfix_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_manager_addfix_userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_addfix_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/login_lable_building_name"
+                        android:textColor="@color/color_black" />
+
+                    <EditText
+                        android:id="@+id/manager_addfix_building_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/login_lable_buliding_number"
+                        android:textColor="@color/color_black" />
+
+                    <EditText
+                        android:id="@+id/manager_addfix_building_number"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/login_lable_house_number"
+                        android:textColor="@color/color_black" />
+
+                    <EditText
+                        android:id="@+id/manager_addfix_house_number"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/manager_fix_user_phone"
+                        android:textColor="@color/color_black" />
+
+                    <EditText
+                        android:id="@+id/manager_addfix_user_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:numeric="integer"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_manager_addfix_userinfo"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/manager_addfix_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_sure"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

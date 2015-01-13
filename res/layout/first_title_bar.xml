@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/leftmenu_bg"
+        android:gravity="center_vertical" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:clickable="true"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <com.yc.view.tools.MarQueeTextView
+            android:id="@+id/bar_title"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/press_background"
+            android:drawableLeft="@drawable/locate_icon"
+            android:ellipsize="marquee"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/top_bar_default_locate"
+            android:drawableRight="@drawable/expand_down"
+            android:textColor="@color/color_white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height" >
+
+        <ImageView
+            android:id="@+id/menu_slide"
+            android:layout_width="@dimen/menu_slide_size"
+            android:layout_height="@dimen/menu_slide_size"
+            android:background="@drawable/press_background"
+            android:clickable="true"
+            android:src="@drawable/menu_slide" />
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/menu_slide"
+            android:background="@color/color_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:visibility="invisible"
+        android:id="@+id/top_bar_right_rel"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/location_search"
+            android:layout_width="@dimen/menu_slide_size"
+            android:layout_height="@dimen/menu_slide_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/press_background"
+            android:clickable="true"
+            android:src="@drawable/search_icon" />
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_toLeftOf="@+id/location_search"
+            android:layout_height="fill_parent"
+            android:background="@color/color_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

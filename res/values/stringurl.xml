@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- %1$s   &amp-->
+<string name="homepager_store_url">http://192.168.1.101:8080/edou/mobile/pmwiew/index.html</string>
+<!-- 服务器域名 -->
+<string name="url_domain">http://192.168.1.102:8080/edou/</string>
+<!-- 用户登陆  userName=%1$s&amp;pwd=%2$s -->
+<string name="url_user_login">user/logintc.do?userName=%1$s&amp;pwd=%2$s</string>
+<string name="url_user_register">user/regmc.do?userName=%1$s&amp;pwd=%2$s</string>
+<!-- 获得电话本 -->
+<string name="url_phone_note">pbook/getbooksbk.do</string>
+</resources>

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/locate_place_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/color_white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:paddingTop="7dp"
+        android:layout_below="@+id/locate_place_item_name"
+        android:background="#626466" />
+
+</RelativeLayout>

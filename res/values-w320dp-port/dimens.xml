@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="homepager_manager_icon_size">50dp</dimen>
+    <dimen name="bottom_tab_img_height">30dp</dimen>
+    <dimen name="bottom_tab_tx_size">13sp</dimen>
+    <dimen name="top_bar_title_text_size">8sp</dimen>
+
+</resources>
