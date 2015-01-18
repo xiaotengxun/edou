@@ -18,8 +18,6 @@ public class RemoteService extends Service {
 
 		@Override
 		public void startBinder() throws RemoteException {
-//			Log.i("chen", "startBinder");
-
 		}
 	};
 	AlarmManager mAlarmManager = null;
@@ -27,14 +25,12 @@ public class RemoteService extends Service {
 
 	@Override
 	public IBinder onBind(Intent intent) {
-//		Log.i("chen", "onBind");
 		return mBinder;
 	}
 
 	@Override
 	public void onCreate() {
 		initAlarm();
-//		Log.i("chen", "onCreate");
 		super.onCreate();
 	}
 
@@ -49,17 +45,7 @@ public class RemoteService extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		flags = START_STICKY;
-//		Log.i("chen", "onStartCommand");
 		return super.onStartCommand(intent, flags, startId);
-	}
-
-	@SuppressWarnings("deprecation")
-	private void setForeground() {
-		Notification notification = new Notification(R.drawable.ic_launcher, getString(R.string.app_name),
-				System.currentTimeMillis());
-		PendingIntent pendingintent = PendingIntent.getActivity(this, 0, new Intent(this, MainAct.class), 0);
-		notification.setLatestEventInfo(this, "uploadservice", "请保持程序在后台运行", pendingintent);
-		startForeground(0x111, notification);
 	}
 
 	@Override
