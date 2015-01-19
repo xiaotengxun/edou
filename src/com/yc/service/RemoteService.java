@@ -56,7 +56,6 @@ public class RemoteService extends Service {
 
 	@Override
 	public boolean onUnbind(Intent intent) {
-//		Log.i("chen", "service onUnbind");
 		mBinder = null;
 		return super.onUnbind(intent);
 	}
